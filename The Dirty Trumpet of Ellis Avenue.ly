@@ -1,6 +1,13 @@
 \header {
   title = "The Dirty Trumpet of Ellis Avenue"
+  %subtitle = "(actually a trombone)"
   composer = "Ivan Gayton and Ellis Ave Crew"
+  tagline = \markup {
+    \column {
+      "Ivan Gayton and Ellis Avenue Crew,"
+      "Summerland, BC, Canada 2022"
+    }
+  }
 }
 
 leadIn = {
