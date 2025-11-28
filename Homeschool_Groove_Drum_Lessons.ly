@@ -1,5 +1,5 @@
 \version "2.24.3"
-#(set-global-staff-size (* 22 1.2))
+#(set-global-staff-size (* 22 1.1))
 
 \header {
   title = "Basic Drum Kit Exercises"
@@ -71,6 +71,19 @@
   \drummode {
     << {
       \repeat unfold 8 hh4
+    } \\ {
+      bd4 s sn bd bd r8 bd sn4 s 
+    } >>
+  }
+>>
+
+\markup \bold {
+  Bonus Groove—Four-way Independence
+}
+\new DrumStaff <<
+  \drummode {
+    << {
+      hh4 hhho hh hh hh hh hh hh
     } \\ {
       bd4 s sn bd bd r8 bd sn4 s 
     } >>
