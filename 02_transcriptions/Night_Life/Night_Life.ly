@@ -33,6 +33,7 @@ climbup = \chordmode {
 }
 finale = \chordmode {
   c2 f c4 b8 c1:7
+  
 }
 
  
@@ -59,9 +60,11 @@ changes = \chordmode {
     \consists "Pitch_squash_engraver"
   } \relative c'' {
     \improvisationOn
+    \override TextScript.fret-diagram-details.number-type = #'arabic
+    %\override TextScript.size = 1.2
     c4^\markup {
       \fret-diagram "6-x;5-x;4-10;3-9;2-8;1-8;"
-    } 
+    }
     c 
     a^\markup {
       \fret-diagram "6-x;5-x;4-x;3-9;2-10;1-8;"
@@ -92,27 +95,18 @@ changes = \chordmode {
       \fret-diagram "6-x;5-x;4-15;3-13;2-13;1-13;"
     }
     c|
-    c4 c c c | c c c c | c c c c | c c c c
-    c4 c c c | c c c c | c c c c | c c c c
-    c4 c c c | c c c c | c c c c | c c c c
-    c4 c c c | c c c c | c c c c | c c c c
-    c4 c c c | c c c c | c c c c | c c c c
-    c4 c c c | c c c c | c c c c | c c c c
-    c4 c c c | c c c c | 
+    \repeat unfold 26 {c4 c c c }
+
     c^\markup \italic "Solo 8 bars (vocal pickup at end of bar 8)" 
     c c c | c c c c
-    c4 c c c | c c c c | c c c c | c c c c
-    c4 c c c | c c c c | c c c c | c c c c
-    c4 c c c | c c c c | c c c c | c c c c
-    c4 c c c | c c c c | c c c c | c c c c
-    c4 c c c | c c c c | c c c c | c c c c
+    \repeat unfold 20 { c4 c c c }
     c4 c c c | c c c2\fermata 
     
   }
   \new Lyrics \lyricsto "chordchanges" {
     _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
-    When_the ev'nin' _ _ sun_goes down _ _
-    you_can find me just hangin'_a round _ _
+    When_the evening _ _ sun_goes down _ _
+    you_can find me just hangin'_a- round _ _
     and_the night_life _
     It ain't_a good_life _ _ but_it's my_life _ _ _ _ _ _
     
@@ -121,7 +115,7 @@ changes = \chordmode {
     and_the night life 
     It ain't a_good life _ but_it's my_life _ _ _ _ _ _
     
-    Just listen _ to_the blues_they're playin _ _
+    Just listen _ to_the blues_they're playin' _ _
     And_then listen _ to_what_the blues_are sayin'
     
     _ _ _ _ _ _ _ _ _ _
