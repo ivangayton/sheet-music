@@ -1,4 +1,16 @@
 {title: All I Want for Christmas is You}
+{columns: 2}
+
+{define: G/B base-fret 0 frets x 2 0 0 0 3}
+{define: Cm/Eb base-fret 5 frets x 2 1 1 4 4 fingers 0 2 1 1 4 4}
+{define: Eb6 base-fret 5 frets x 2 1 1 4 4 fingers 0 2 1 1 4 4}
+{define: Cm6/D base-fret 5 frets x 1 3 4 4 4 fingers 0 1 3 4 4 4}
+{define: Am7 base-fret 0 frets x 0 2 0 1 0}
+{define: Cm/Eb base-fret 5 frets x 2 1 1 4 4 fingers 0 2 1 1 4 4}
+{define: G/D base-fret 0 frets x x 0 0 3 3}
+{define: E7 base-fret 5 frets x 3 2 3 1 0}
+{define: Cm6/Eb base-fret 0 frets x x 1 2 1 3 fingers 0 0 1 2 1 4}
+{define: Am7/D base-fret 0 frets x x 0 2 1 3 fingers 0 0 0 2 1 4}
 
 [Intro]
 [G]   [Em]   [C]   [D]
@@ -30,7 +42,8 @@ There upon the fireplace
 [Am7]All I want for [Cm6/Eb] Christmas is [G]you [Em]
 [Am7] You, [D]baby
 {eoc}
- 
+
+{cb}
  
 [G]Oh, I won't ask for much this Christmas
 I won't even wish for snow
@@ -85,13 +98,3 @@ This is all I'm asking for
 [Fade out]
 
 
-{define: G/B base-fret 0 frets x 2 0 0 0 3}
-{define: Cm/Eb base-fret 5 frets x 2 1 1 4 4 fingers 0 2 1 1 4 4}
-{define: Eb6 base-fret 5 frets x 2 1 1 4 4 fingers 0 2 1 1 4 4}
-{define: Cm6/D base-fret 5 frets x 1 3 4 4 4 fingers 0 1 3 4 4 4}
-{define: Am7 base-fret 0 frets x 0 2 0 1 0}
-{define: Cm/Eb base-fret 5 frets x 2 1 1 4 4 fingers 0 2 1 1 4 4}
-{define: G/D base-fret 0 frets x x 0 0 3 3}
-{define: E7 base-fret 5 frets x 3 2 3 1 0}
-{define: Cm6/Eb base-fret 0 frets x x 1 2 1 3 fingers 0 0 1 2 1 4}
-{define: Am7/D base-fret 0 frets x x 0 2 1 3 fingers 0 0 0 2 1 4}
