@@ -12,7 +12,7 @@
 {define: Cm6/Eb base-fret 0 frets x x 1 2 1 3 fingers 0 0 1 2 1 4}
 {define: Am7/D base-fret 0 frets x x 0 2 1 3 fingers 0 0 0 2 1 4}
 
-[Intro]
+[*Intro]
 [G]   [Em]   [C]   [D]
  
 [G]I don't want a lot for Christmas
@@ -24,7 +24,8 @@
 [G/D]Make my wish come [E7]true
 [Am7]All I want for [Cm6/D]Christmas is...
 You
-[(up tempo)] [G]  [Em]  [C] yeah [D]
+[*(up tempo)]
+[G]  [Em]  [C] yeah [D]
 
 [G]I don't want a lot for Christmas
 There is just one thing I need
@@ -62,7 +63,7 @@ Oh baby, [Am7]all I want for [Cm6/Eb]Christmas is
 [G] you [Em] [Am7] You, [D] baby
 {eoc} 
  
-[Bridge]
+[*Bridge]
 [B7](Oooh) All the lights are shining
 [Em]So brightly everywhere
 [B7](Ooh...) And the sound of children's
@@ -71,9 +72,9 @@ Oh baby, [Am7]all I want for [Cm6/Eb]Christmas is
 [G/D]I hear those [E7]sleigh bells ringing
 [Am7]Santa won't you bring me the one I really need
 Won't you [Am7/D]please bring my baby to me...
+
+{cb}
  
- 
-[Verse 4]
 [G]Oh, I don't want a lot for Christmas 
 This is all I'm asking for
 [C](I...) I just want to see my baby
@@ -88,13 +89,13 @@ This is all I'm asking for
 [G] You [Em]   Am7(You, [D]baby)
 {eoc}
  
-[Outro]
+[*Outro]
 [G](All I want [Em]for Christ[Am7]mas is [D]you... baby)
 [G](All I want [Em]for Christ[Am7]mas is [D]you... baby)
 [G](All I want [Em]for Christ[Am7]mas is [D]you... baby)
 [G](All I want [Em]for Christ[Am7]mas is [D]you... baby)
 [G](All I want [Em]for Christ[Am7]mas is [D]you... baby)
 
-[Fade out]
+[*Fade out]
 
 
