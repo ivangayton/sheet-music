@@ -124,7 +124,7 @@ guittabstaff = \new TabStaff \with {
 }
 
 % Bass
-aslap = {
+aslap = \relative c {
   a,8 a'16 a, g' a a, a c' a, a a' a, a g' a
 }
 eslap = \relative c {
