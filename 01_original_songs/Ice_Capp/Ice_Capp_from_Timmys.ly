@@ -21,7 +21,6 @@ versechords = \chordmode {
     bes4. a4.:7 a4:7 | g1:m | ees1 | ees1:m | 
     bes4. a4.:7 a4:7 | g1:m | c4.:m f4.:7 f4:7 | bes1 \break
   }
-  
 }
 
 strum = {
@@ -57,11 +56,12 @@ guitstaff = \new Staff \with {
     \improvisationOn
       \strum 
   }
->>
+  >>
 
 bassstaff = \new Staff \with {
       instrumentName = "Bass" shortInstrumentName = "Bs"
-    } <<
+    } 
+    <<
       \new Voice = "Bass" { 
         \clef "bass"
         \autoBeamOn 
@@ -76,8 +76,16 @@ bassstaff = \new Staff \with {
     \bassstaff
   >>
   \layout { 
-    \context { \Staff \RemoveEmptyStaves }
-    \override Score.TimeSignature.
-    break-visibility = #all-invisible
+    %\context { \Staff \RemoveEmptyStaves }
+    %\override Score.TimeSignature.
+    %break-visibility = #all-invisible
   }
+}
+
+\score {
+  <<
+    \versechords
+    \bass_line
+  >>
+  \midi { }
 }
