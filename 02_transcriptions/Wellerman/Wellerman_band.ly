@@ -14,6 +14,7 @@
   }
 }
 
+% TRUMPET
 trumpetverse = \relative c' {
 
   c4 c8 ees g4 g | aes8 f f c' c g g r | 
@@ -24,7 +25,21 @@ trumpetchorus = \relative c' {
   c'4 c8 g bes g g r | aes8 f f c' c g g r |
   c4 c8 g bes g g r | g8 f ees d c4 r  \break
 }
+    
+trumpetstaff = \new Staff \with {
+      instrumentName = "Trumpet" shortInstrumentName = "Tr"
+    } <<
+      \new Voice = "Trumpet" { 
+        \clef "treble"
+        \autoBeamOn 
+        \key c \minor
+        \numericTimeSignature
+        \time 4/4
+        \trumpetverse \trumpetchorus  
+      }
+    >>
 
+% BASS
 bass_verse = \relative c {
   bes4. f8 bes4. bes8 | ges4. ges8 bes4. r8 |
   bes4. f8 bes4. bes8 | f4 f bes4 r \break
@@ -48,19 +63,7 @@ bassstaff = \new Staff \with {
       }
     >>
     
-trumpetstaff = \new Staff \with {
-      instrumentName = "Trumpet" shortInstrumentName = "Tr"
-    } <<
-      \new Voice = "Trumpet" { 
-        \clef "treble"
-        \autoBeamOn 
-        \key c \minor
-        \numericTimeSignature
-        \time 4/4
-        \trumpetverse \trumpetchorus  
-      }
-    >>
-
+    
 \score {
   <<
     \trumpetstaff
@@ -68,7 +71,7 @@ trumpetstaff = \new Staff \with {
   >>
   \layout { 
     \context { \Staff \RemoveEmptyStaves }
-    %\override Score.TimeSignature.
+    \override Score.TimeSignature.
     break-visibility = #all-invisible
   }
 }
