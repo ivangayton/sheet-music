@@ -15,59 +15,87 @@
 }
 
 % TRUMPET
-trumpetverse = \relative c' {
-
-  c4 c8 ees g4 g | aes8 f f c' c g g r | 
-  c,4 c8 ees g4 g | g8 f ees d c4 r \break  
+trumpetpickup = \relative c' {
+  r2 r4 r8 d8 
 }
-
+trumpetverse = \relative c' {
+  d8 d16 d d8 f a8 a a8 a | bes8 g g d' d a a d, | 
+  d8 d16 d d8 f a8 a a8 a | a8 g f e d4 r \break  
+}
 trumpetchorus = \relative c' {
-  c'4 c8 g bes g g r | aes8 f f c' c g g r |
-  c4 c8 g bes g g r | g8 f ees d c4 r  \break
+  d'4 d8 r16 a c8 a a r16 a | bes8 g g d' d a a4 |
+  d4 d8 r16 a c8 a a a | a8 g f e d4 r  \break
 }
     
 trumpetstaff = \new Staff \with {
-      instrumentName = "Trumpet" shortInstrumentName = "Tr"
+      instrumentName = "Bb Trumpet" shortInstrumentName = "Tr"
     } <<
       \new Voice = "Trumpet" { 
         \clef "treble"
         \autoBeamOn 
-        \key c \minor
+        \key d \minor
         \numericTimeSignature
         \time 4/4
-        \trumpetverse \trumpetchorus  
+        \trumpetpickup \trumpetverse \trumpetchorus  
       }
     >>
 
 % BASS
-bass_verse = \relative c {
+basspickup = \relative c {
+  r1 
+}
+bassverse = \relative c {
   bes4. f8 bes4. bes8 | ges4. ges8 bes4. r8 |
   bes4. f8 bes4. bes8 | f4 f bes4 r \break
 }
-
-bass_chorus = \relative c' {
+basschorus = \relative c' {
   ges4. ges8 des4. des8 | ees4. ees8 bes4. r8 |
   ges'4. ges8 des4. des8 | f,4 f bes4 r \break
 }
-
 bassstaff = \new Staff \with {
       instrumentName = "Bass" shortInstrumentName = "Bs"
     } <<
       \new Voice = "Bass" { 
         \clef "bass"
         \autoBeamOn 
-        \key bes \minor
+        \key c \minor
         \numericTimeSignature
         \time 4/4
-        \bass_verse \bass_chorus
+        \basspickup \bassverse \basschorus
       }
     >>
     
+% DRUMS
+drumpickup = \relative c {
+   \drummode {
+    {
+      \repeat unfold 4 bd4
+    } 
+  }
+}
+drumverse = \relative c {
+   \drummode {
+    << {
+      \repeat unfold 8 hh4
+    } \\ {
+      bd4 s sn s bd s sn s 
+    } >>
+  }
+}
+drumchorus = \relative c' {
+}
+drumstaff = \new DrumStaff \with {
+      instrumentName = "Drum kit" shortInstrumentName = "Dr"
+    } << {
+  \drumpickup \drumverse
+  }
+  >>
     
 \score {
   <<
     \trumpetstaff
     \bassstaff
+    \drumstaff
   >>
   \layout { 
     \context { \Staff \RemoveEmptyStaves }
